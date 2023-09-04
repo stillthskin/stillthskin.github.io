@@ -1,0 +1,79 @@
+@media only screen and (max-width: 810px) {
+    .navi {
+        display: flex;
+        width: 99%;
+        justify-content: space-between;
+        height: 60px;
+        background: teal;
+        padding: 6px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .navi a {
+        text-decoration: none;
+        color: antiquewhite;
+        font-weight: bold;
+        font-size: large;
+        background: rgb(149, 201, 149);
+        padding: 9px;
+    }
+
+    .navi ul {
+        display: none;
+    }
+
+    .navi #togglemenu {
+        display: block;
+    }
+
+    .sidenavi {
+        display: block;
+        width: 35%;
+        height: 30vh;
+        background: teal;
+    }
+
+    .sidenavi ul {
+        list-style: none;
+        display: block;
+        left: 0;
+    }
+
+    .sidenavi a {
+        display: block;
+        text-decoration: none;
+    }
+
+    .hero {
+        width: 99%;
+        height: 45vh;
+        border: solid 2px;
+        margin: auto;
+
+    }
+
+    .foot {
+        bottom: 0;
+        height: 120px;
+        width: 99%;
+        display: flex;
+        color: aqua;
+        position: sticky;
+        justify-content: space-between;
+        padding: 6px;
+        align-items: center;
+        background: black;
+        margin: auto;
+    }
+
+    .foot .left {
+        width: 30%;
+    }
+
+    .foot .right {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+}
