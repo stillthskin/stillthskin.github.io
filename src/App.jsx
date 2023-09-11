@@ -8,9 +8,11 @@ function App() {
 
   return (
     <>
-      <Navi />
-      <Projects />
-      <Contact />
+      {<Navi />}
+      {<Hero />}
+      {<Projects />}
+      {<Contact />}
+      {<Footer />}
     </>
   )
 }

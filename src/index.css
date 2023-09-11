@@ -39,11 +39,38 @@
 }
 
 .hero {
+    top: 30px;
+    display: flex;
     width: 99%;
     height: 45vh;
     border: solid 2px;
     margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+}
+
+.heroleft {
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    margin: auto;
+}
+
+.heroright {
+    width: 45%;
+    height: 100%;
+    background-image: url(./assets/images/prof.jpg);
+    background-color: aqua;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+
+}
+
+.copyright {
+    text-align: center;
 }
 
 .foot {
