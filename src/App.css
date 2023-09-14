@@ -65,11 +65,15 @@
     .heroright {
         width: 100%;
         height: 100%;
-        background-image: url(./assets/images/prof.jpg);
-        background-color: aqua;
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    .heroright img {
+        width: 90%;
+        height: 90%;
+    }
+
 
     .foot {
         bottom: 0;

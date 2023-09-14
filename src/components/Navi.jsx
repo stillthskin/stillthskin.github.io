@@ -18,8 +18,8 @@ function Navi() {
 
 
                 </ul>
-                <button id=''><i className={theme ? " fa-solid fa-sun" : "fa-solid fa-moon"}></i></button>
-                <button id='togglemenu'>---</button>
+                <button id=''><i className={theme ? "fa fa-car fa-2x" : "fa fa-spinner fa-spin"}></i></button>
+                <button id='togglemenu'><i className={sidenavi ? 'fa fa-bars ' : 'fa fa-bars'}></i></button>
 
             </div >
             <div className='sidenavi'>
@@ -33,5 +33,7 @@ function Navi() {
         </>
     )
 }
-
+function showsidenavi() {
+    console.log("The navi Button clicked");
+}
 export default Navi

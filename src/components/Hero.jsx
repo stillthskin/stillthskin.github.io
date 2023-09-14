@@ -9,7 +9,7 @@ function Hero() {
                     <h1>Hi, My name is Vlad</h1>
                     <p></p>
                 </div>
-                <div className='heroright'>hhh</div>
+                <div className='heroright'><img src={"./assets/images/prof.jpg"} /></div>
 
 
             </div>
