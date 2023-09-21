@@ -17,7 +17,7 @@ function Navi() {
 
 
                 </ul>
-                <button id=''><i className={theme ? "fa fa-car fa-2x" : "fa fa-spinner fa-spin"}></i></button>
+                <button id=''><i className={theme ? "fa fa-moon-o" : "fa fa-spinner fa-spin"}></i></button>
                 <button id='togglemenu'><i className={sidenavi ? 'fa fa-bars ' : 'fa fa-bars'}></i></button>
 
             </div >

@@ -58,7 +58,6 @@ a:active {
     display: flex;
     width: 99%;
     height: 80vh;
-    border: solid 2px;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -67,7 +66,7 @@ a:active {
 }
 
 .hero .intro {
-    color: rgb(58, 151, 151);
+    color: #123456;
 }
 
 .heroleft {
@@ -77,10 +76,6 @@ a:active {
     width: 45%;
     height: 100%;
     margin: auto;
-}
-
-.heroleft h1,
-p {
     animation: slidein;
     animation-duration: 1.5s;
 }
@@ -289,6 +284,14 @@ textarea {
 
 .copyright {
     text-align: center;
+    background-color: black;
+    bottom: 0;
+    color: antiquewhite;
+}
+
+.copyright ul {
+    list-style: none;
+    padding: 0;
 }
 
 .foot {
@@ -296,7 +299,7 @@ textarea {
     height: 120px;
     width: 99%;
     display: flex;
-    color: aqua;
+    color: antiquewhite;
     position: sticky;
     justify-content: space-between;
     padding: 6px;
@@ -318,9 +321,11 @@ textarea {
 @keyframes slidein {
     from {
         margin-left: -500px;
+        opacity: 0;
     }
 
     to {
         margin-left: 0%;
+        opacity: 1;
     }
 }
