@@ -6,19 +6,36 @@ import '../index.css'
 function Hero() {
     return (
         <>
-            <div className='hero'>
-                <div className='heroleft'>
-                    <h1>Hi, My name is <span className='intro'>Vlad</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Rem sequi quasi quam eius consequatur aliquam dicta!
-                        Quidem odio blanditiis ab! Labore quam cupiditate eius
-                        ipsum recusandae vero iste consequatur velit.</p>
+            <div id="about">
+                <nav class="imgsect"><img src={prof} /></nav>
+                <div class="descsect">
+                    <h2>Mr. Dennis Kenda</h2>
+                    <div class="introI"><span class="staticI">I'm: </span><ul class="dynaI">
+                        <li><span>Dev</span></li>
+                        <li><span>Pentest</span></li>
+                        <li><span>To Be Reviewed</span></li>
+                    </ul>
+                    </div>
+                    <br />
+                    <p id="my_intro">Hello! I'm a web developer with a passion for creating beautiful and functional websites. I have been working in the field for several years, honing my skills in a variety of programming languages, including HTML, CSS, JavaScript, and PHP.
+
+                        My approach to web development is focused on creating user-friendly and responsive websites that meet the unique needs of each client. I believe that good design should not only look great, but also be intuitive and easy to navigate.
+
+                        Over the years, I have had the pleasure of working with a diverse range of clients, from small businesses to large corporations. Each project has presented its own set of challenges, and I am always excited to tackle new and exciting projects.
+
+                        In addition to my technical skills, I am also a strong communicator and collaborator. I believe that effective communication is key to any successful project, and I am committed to keeping my clients informed and involved every step of the way.
+
+                        When I'm not coding, you can usually find me exploring new hiking trails or trying out new recipes in the kitchen. I believe that a healthy work-life balance is essential to staying motivated and focused in my work.
+
+                        Thank you for taking the time to learn a little bit about me. I look forward to the opportunity to work with you and help bring your website vision to life!</p>
+
+                    <button id="read_more_btn">Read More</button>
                 </div>
-                <div className='heroright'><img src={prof} /></div>
-
-
             </div>
+
         </>
+
+
     )
 }
 

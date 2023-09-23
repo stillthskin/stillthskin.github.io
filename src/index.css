@@ -1,3 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    animation: transIn;
+    animation-duration: 1.5s;
+}
+
 .navi {
     display: flex;
     width: 99%;
@@ -53,46 +60,117 @@ a:active {
     color: antiquewhite
 }
 
-.hero {
-    top: 30px;
-    display: flex;
-    width: 99%;
-    height: 80vh;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+#my_intro {
+    font-family: 'Dancing Script', cursive;
+    transition: all 1.5s;
+    display: none;
 }
 
-.hero .intro {
-    color: #123456;
+#read_more_btn {
+    padding: 6px;
+    font-weight: bold;
+    border: solid teal;
+    background: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    left: 0;
 }
 
-.heroleft {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 45%;
-    height: 100%;
-    margin: auto;
-    animation: slidein;
-    animation-duration: 1.5s;
+#about {
+    margin-top: 100px;
+    width: 100%;
+    padding: 30px;
+    min-height: 70vh;
+    box-sizing: border-box;
 }
 
-.heroright {
-    width: 45%;
-    height: 100%;
-    /*background-image: url(./assets/images/prof.jpg);*/
-    background-size: contain;
-    background-repeat: no-repeat;
+#about .imgsect {
+    width: 30%;
     float: right;
+    height: 100%;
+    align-items: end;
+    justify-content: right;
+}
+
+#about .descsect {
+    width: 70%;
+    float: left;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 700;
 
 }
 
-.heroright img {
-    width: 90%;
-    height: 90%;
+.introI {
+    display: inline-flex;
+}
+
+.staticI {
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+h3 {
+    border-bottom: solid #000;
+    width: 100%;
+    bottom: 15px;
+    background-color: #000;
+    color: #fff;
+
+}
+
+.dynaI {
+    margin-left: 15px;
+    line-height: 40px;
+    height: 40px;
+    background: transparent;
+    overflow: hidden;
+}
+
+.dynaI li span {
+    position: relative;
+    margin-top: 10px;
+}
+
+.dynaI li span::after {
+    content: "";
+    border-left: 2px solid teal;
+    width: 100%;
+    height: 80%;
+    background: #ccc;
+    left: 0;
+    position: absolute;
+    animation: typing 1.5s steps(15) infinite;
+}
+
+.dynaI li {
+    font-size: 40px;
+    font-weight: 600;
+    color: teal;
+    top: 0px;
+    position: relative;
+    animation: slide 4.5s steps(3) infinite;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#about img {
+    width: 400px;
+    height: 400px;
+    left: 0;
 }
 
 .projects {
@@ -100,159 +178,45 @@ a:active {
 }
 
 /*##############################################################################################*/
-article {
-    --img-scale: 1.001;
-    --title-color: black;
-    --link-icon-translate: -20px;
-    --link-icon-opacity: 0;
-    position: relative;
-    border-radius: 16px;
-    box-shadow: none;
+#projects {
     background: #fff;
-    transform-origin: center;
-    transition: all 0.4s ease-in-out;
-    overflow: hidden;
 }
 
-article a::after {
-    position: absolute;
-    inset-block: 0;
-    inset-inline: 0;
-    cursor: pointer;
-    content: "";
+#projects li {
+    display: inline-grid;
+    row-gap: 10px;
+    margin: 10px;
+
 }
 
-/* basic article elements styling */
-article h2 {
-    margin: 0 0 18px 0;
-    font-family: "Bebas Neue", cursive;
-    font-size: 1.9rem;
-    letter-spacing: 0.06em;
-    color: var(--title-color);
-    transition: color 0.3s ease-out;
-}
-
-figure {
-    margin: 0;
-    padding: 0;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-}
-
-article img {
-    max-width: 100%;
-    transform-origin: center;
-    transform: scale(var(--img-scale));
-    transition: transform 0.4s ease-in-out;
-}
-
-.article-body {
-    padding: 24px;
-}
-
-article a {
-    display: inline-flex;
-    align-items: center;
+#projects a {
     text-decoration: none;
-    color: #28666e;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 6px 6px 6px 6px grey;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+    width: 250px;
+    list-style: none;
+    text-decoration: none;
+    box-shadow: grey 20px;
+    top: 15px;
 }
 
-article a:focus {
-    outline: 1px dotted #28666e;
+#projects {
+    width: 100%;
 }
 
-article a .icon {
-    min-width: 24px;
-    width: 24px;
-    height: 24px;
-    margin-left: 5px;
-    transform: translateX(var(--link-icon-translate));
-    opacity: var(--link-icon-opacity);
-    transition: all 0.3s;
+#projects a:hover {
+    transform: scale(1.2);
+    transition: all 1s;
 }
 
-/* using the has() relational pseudo selector to update our custom properties */
-article:has(:hover, :focus) {
-    --img-scale: 1.1;
-    --title-color: #28666e;
-    --link-icon-translate: 0;
-    --link-icon-opacity: 1;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
+#projects a img {
+    width: 100%;
 
-
-/************************ 
-  Generic layout (demo looks)
-  **************************/
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 48px 0;
-    font-family: "Figtree", sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    /*background-image: linear-gradient(45deg, #7c9885, #b5b682);*/
-    background: antiquewhite;
-    min-height: 100vh;
-}
-
-.articles {
-    display: grid;
-    max-width: 1200px;
-    margin-inline: auto;
-    padding-inline: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
-}
-
-@media screen and (max-width: 960px) {
-    article {
-        container: card/inline-size;
-    }
-
-    .article-body p {
-        display: none;
-    }
-}
-
-@container card (min-width: 380px) {
-    .article-wrapper {
-        display: grid;
-        grid-template-columns: 100px 1fr;
-        gap: 16px;
-    }
-
-    .article-body {
-        padding-left: 0;
-    }
-
-    figure {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    figure img {
-        height: 100%;
-        aspect-ratio: 1;
-        object-fit: cover;
-    }
-}
-
-.sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
 }
 
 /*##############################################################################################*/
@@ -282,40 +246,64 @@ textarea {
     width: 20%;
 }
 
-.copyright {
-    text-align: center;
-    background-color: black;
-    bottom: 0;
-    color: antiquewhite;
-}
-
-.copyright ul {
-    list-style: none;
-    padding: 0;
-}
-
 .foot {
-    bottom: 0;
-    height: 120px;
-    width: 99%;
-    display: flex;
-    color: antiquewhite;
-    position: sticky;
-    justify-content: space-between;
-    padding: 6px;
-    align-items: center;
-    background: black;
-    margin: auto;
+    display: block;
 }
 
-.foot .left {
-    width: 30%;
+.foot .social a {
+    padding: 12px;
+    border-radius: 50%;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: #000;
+
 }
 
-.foot .right {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
+.foot .social a:hover {
+    padding: 12px;
+    border-radius: 50%;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.foot .copywright {
+    margin-left: 30%;
+    padding: 10px;
+}
+
+.foot .social ul {
+    margin-left: 35%;
+}
+
+.foot .social ul li {
+    display: inline-grid;
+    overflow: hidden;
+    border: solid black 3px;
+    transition: all 1.5s;
+    border-radius: 20px;
+    margin: 3px;
+
+}
+
+.foot .social ul li:nth-child(1):hover {
+    background-color: #0077B5;
+}
+
+.foot .social ul li:nth-child(2):hover {
+    background-color: #333;
+}
+
+.foot .social ul li:nth-child(3):hover {
+    background-color: #800000;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0px -15px 0px 15px;
+    }
 }
 
 @keyframes slidein {
@@ -327,5 +315,27 @@ textarea {
     to {
         margin-left: 0%;
         opacity: 1;
+    }
+}
+
+@keyframes slidetop {
+    from {
+        top: -450px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes transIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
     }
 }

@@ -2,9 +2,10 @@ import React from 'react'
 import { useState } from 'react'
 import '../index.css'
 
+
 function Navi() {
-    const [sidenavi, showsidenavi] = useState(false);
-    const [theme, toggletheme] = useState(true);
+    const [sidenavi, setsidenavi] = useState(false);
+    const [theme, settheme] = useState(true);
     return (
         <>
             <div className='navi'>
@@ -17,12 +18,12 @@ function Navi() {
 
 
                 </ul>
-                <button id=''><i className={theme ? "fa fa-moon-o" : "fa fa-spinner fa-spin"}></i></button>
-                <button id='togglemenu'><i className={sidenavi ? 'fa fa-bars ' : 'fa fa-bars'}></i></button>
+                <button id='' onClick={toggltheme}><i className={theme ? "fa fa-moon-o" : "fa fa-spinner fa-spin"}></i></button>
+                <button id='togglemenu' onClick={showsidenavi}><i className={sidenavi ? 'fa fa-bars ' : 'fa fa-bars'}></i></button>
 
             </div >
             <br />
-            <div className='sidenavi'>
+            <div id='sidenavi' className='sidenavi'>
                 <ul>
                     <li><a href='#home'>Home</a></li>
                     <li><a href='#home'>Projects</a></li>
@@ -35,5 +36,12 @@ function Navi() {
 }
 function showsidenavi() {
     console.log("The navi Button clicked");
+    alert("The navi Button clicked");
+
 }
+function toggltheme() {
+    alert("The arrow fungtion of click works");
+    console.log("The arrow fungtion of click works");
+}
+
 export default Navi

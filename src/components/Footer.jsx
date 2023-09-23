@@ -6,42 +6,22 @@ function Footer() {
     var dateVariable = new Date();
     var year = dateVariable.getFullYear();
     var month = dateVariable.getMonth();
+    var full_year = moth[month] + " " + year;
+    //document.getElementById("copydate").innerHTML = full_year;
+    setTimeout(function () { date_time(); }, 1000);
     return (
         <>
-            <div className='copyright'>
-                <div className='foot'>
-                    <nav className='left'>
-                        <ul>
-                            <li>1</li>
-                            <li>1</li>
-                            <li>1</li>
-                            <li>1</li>
-                        </ul>
-                    </nav>
-                    <nav className='right'>
-                        <div className='rightL'>
-                            <ul>
-                                <li>2</li>
-                                <li>2</li>
-                                <li>2</li>
-                                <li>2</li>
-                            </ul>
-                        </div>
-                        <div className='rightR'>
-                            <ul>
-                                <li>3</li>
-                                <li>3</li>
-                                <li>3</li>
-                                <li>3</li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <br />
-
+            <footer class="foot">
+                <div class="social">
+                    Find me on my social media:<br />
+                    <ul>
+                        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                        <li><a href="https://www.linkedin.com">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com">CodePen</a></li>
+                    </ul>
                 </div>
-                <p>&copy;{moth[month] + "," + year}</p>
-            </div>
-
+                <p class="copywright"><b>@<span id="copydate">{full_year}</span></b> Web Developer Portfolio. All rights reserved.</p>
+            </footer>
         </>
     )
 }

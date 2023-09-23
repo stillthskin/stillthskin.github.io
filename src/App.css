@@ -1,4 +1,9 @@
 @media only screen and (max-width: 810px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
     .navi {
         display: flex;
         width: 99%;
@@ -68,56 +73,186 @@
         padding: 7px;
     }
 
-    .hero {
-        width: 99%;
+    #my_intro {
+        font-family: 'Dancing Script', cursive;
+        transition: all 1.5s;
+        display: none;
+    }
+
+    #read_more_btn {
+        padding: 6px;
+        font-weight: bold;
+        border: solid teal;
+        background: none;
+        border-radius: 15px;
+        margin-top: 30px;
+        left: 0;
+    }
+
+    #about {
+        margin-top: 50px;
+        width: 100%;
+        padding: 9px;
         height: auto;
-        overflow: hidden;
-        border: solid 2px;
-        margin: auto;
+        background: #fff;
+    }
+
+    #about .imgsect {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    #about .descsect {
+        width: 100%;
+        height: auto;
         display: block;
-
-    }
-
-    .heroleft {
         justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 600;
+
+    }
+
+    .introI {
+        display: inline-flex;
+    }
+
+    .staticI {
+        font-size: 30px;
+        font-weight: 600;
+
+    }
+
+    h3 {
+        border-bottom: solid #000;
         width: 100%;
-        height: 100%;
-        margin: auto;
-        font-size: 15px;
+        bottom: 15px;
+        background-color: #000;
+        color: #fff;
+
     }
 
-    .heroright {
+    .dynaI {
+        margin-left: 15px;
+        line-height: 40px;
+        height: 40px;
+        background: transparent;
+        overflow: hidden;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .dynaI li span {
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .dynaI li span::after {
+        content: "";
+        border-left: 2px solid teal;
         width: 100%;
-        height: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
+        height: 80%;
+        background: #ccc;
+        left: 0;
+        position: absolute;
+        animation: typing 1.5s steps(15) infinite;
     }
 
-    .heroright img {
-        width: 90%;
-        height: 90%;
+    .dynaI li {
+        font-size: 30px;
+        font-weight: 600;
+        color: teal;
+        top: 0px;
+        position: relative;
+        animation: slide 4.5s steps(3) infinite;
     }
 
+    #projects {
+        background: #fff;
+    }
+
+    #projects ul {
+        margin-top: 21px;
+    }
+
+    #projects li {
+        display: inline-grid;
+        row-gap: 10px;
+        margin: 10px;
+
+    }
+
+    #projects a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        box-shadow: 6px 6px 6px 6px grey;
+        display: block;
+        background: #fff;
+        text-align: center;
+        border-radius: 15px;
+        width: 300px;
+        list-style: none;
+        text-decoration: none;
+        box-shadow: grey 20px;
+        top: 15px;
+    }
 
     .foot {
-        bottom: 0;
-        height: auto;
-        width: 99%;
         display: block;
-        color: aqua;
-        position: sticky;
-        padding: 6px;
-        align-items: left;
-        background: black;
-        margin: auto;
     }
 
-    .foot .left {
-        width: 100%;
+    .foot .social a {
+        padding: 12px;
+        border-radius: 50%;
+        line-height: 1.2em;
+        text-decoration: none;
+        color: #000;
+
     }
 
-    .foot .right {
-        display: block;
-        width: 100%;
+    .foot .social a:hover {
+        padding: 12px;
+        border-radius: 50%;
+        line-height: 1.2em;
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .foot .copywright {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .foot .social ul {
+        margin-left: 15%;
+    }
+
+    .foot .social ul li {
+        display: inline-grid;
+        overflow: hidden;
+        border: solid black 3px;
+        transition: all 1.5s;
+        border-radius: 20px;
+
+    }
+
+    .foot .social ul li:nth-child(1):hover {
+        background-color: #0077B5;
+    }
+
+    .foot .social ul li:nth-child(2):hover {
+        background-color: #333;
+    }
+
+    .foot .social ul li:nth-child(6):hover {
+        background-color: teal;
     }
 }
