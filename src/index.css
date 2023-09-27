@@ -5,6 +5,14 @@
     animation-duration: 1.5s;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 .navi {
     display: flex;
     width: 99%;
@@ -173,13 +181,11 @@ ul {
     left: 0;
 }
 
-.projects {
-    width: 100%;
-}
-
 /*##############################################################################################*/
 #projects {
     background: #fff;
+    justify-content: center;
+    align-items: center;
 }
 
 #projects li {
@@ -203,10 +209,6 @@ ul {
     text-decoration: none;
     box-shadow: grey 20px;
     top: 15px;
-}
-
-#projects {
-    width: 100%;
 }
 
 #projects a:hover {
@@ -259,6 +261,14 @@ textarea {
 
 }
 
+.foot .social .fa {
+    color: #000;
+}
+
+.foot .social .fa:hover {
+    color: #fff;
+}
+
 .foot .social a:hover {
     padding: 12px;
     border-radius: 50%;
@@ -274,15 +284,15 @@ textarea {
 }
 
 .foot .social ul {
-    margin-left: 35%;
+    margin-left: 40%;
 }
 
 .foot .social ul li {
     display: inline-grid;
     overflow: hidden;
-    border: solid black 3px;
+    border: solid black 1px;
     transition: all 1.5s;
-    border-radius: 20px;
+    border-radius: 11px;
     margin: 3px;
 
 }

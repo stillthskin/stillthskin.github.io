@@ -23,7 +23,7 @@ function Navi() {
 
             </div >
             <br />
-            <div id='sidenavi' className='sidenavi'>
+            <div id='sidenavi' className={sidenavi ? 'sidenavi show' : 'sidenavi hide'}>
                 <ul>
                     <li><a href='#home'>Home</a></li>
                     <li><a href='#home'>Projects</a></li>
@@ -36,7 +36,7 @@ function Navi() {
 }
 function showsidenavi() {
     console.log("The navi Button clicked");
-    alert("The navi Button clicked");
+    alert("The navi Button clicked" + sidenavi);
 
 }
 function toggltheme() {

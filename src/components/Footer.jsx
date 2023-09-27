@@ -15,12 +15,13 @@ function Footer() {
                 <div class="social">
                     Find me on my social media:<br />
                     <ul>
-                        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-                        <li><a href="https://www.linkedin.com">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com">CodePen</a></li>
+                        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.linkedin.com"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com"><i class="fa fa-codepen" aria-hidden="true"></i>
+                        </a></li>
                     </ul>
                 </div>
-                <p class="copywright"><b>@<span id="copydate">{full_year}</span></b> Web Developer Portfolio. All rights reserved.</p>
+                <p class="copywright"><b>@<span id="copydate">{full_year}</span></b>Kenda Portfolio. All rights reserved.</p>
             </footer>
         </>
     )

@@ -6,6 +6,7 @@ function Projects() {
     return (
         <>
             <div id="projects">
+                <br />
                 <h3>Projects:</h3>
 
                 <ul>
