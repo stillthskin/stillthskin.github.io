@@ -1,8 +1,8 @@
-import Navi from './Navi'
-import Hero from './Hero'
-import Projects from './Projects'
-import Contact from './Contact'
-import Footer from './Footer'
+import Navi from './Navi.jsx'
+import Hero from './Hero.jsx'
+import Projects from './Projects.jsx'
+import Contact from './Contact.jsx'
+import Footer from './Footer.jsx'
 
 
 
