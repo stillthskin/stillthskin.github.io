@@ -4,8 +4,23 @@ import '../index.css'
 
 
 function Navi() {
+    //const sidenavigation = document.getElementById("sidenavi");
     const [sidenavi, setsidenavi] = useState(false);
+    //sidenavi ? sidenavigation.style.display("none") : sidenavigation.style.display("none")
+
     const [theme, settheme] = useState(true);
+    function showhidemenu() {
+        //sidenavi = true;
+        setsidenavi(!sidenavi);
+        alert("The navi Button clicked" + sidenavi);
+        console.log("The navi Button clicked");
+
+    }
+    function changeTheme() {
+        settheme(!theme);
+        alert("The arrow fungtion of click works");
+        console.log("The arrow fungtion of click works");
+    }
     return (
         <>
             <div className='navi'>
@@ -18,8 +33,8 @@ function Navi() {
 
 
                 </ul>
-                <button id='' onClick={toggltheme}><i className={theme ? "fa fa-moon-o" : "fa fa-spinner fa-spin"}></i></button>
-                <button id='togglemenu' onClick={showsidenavi}><i className={sidenavi ? 'fa fa-bars ' : 'fa fa-bars'}></i></button>
+                <button id='' onClick={changeTheme}><i className={theme ? "fa fa-moon-o" : "fa fa-spinner fa-spin"}></i></button>
+                <button id='togglemenu' onClick={showhidemenu}><i className={sidenavi ? 'fa fa-bars ' : 'fa fa-bars'}></i></button>
 
             </div >
             <br />
@@ -34,14 +49,6 @@ function Navi() {
         </>
     )
 }
-function showsidenavi() {
-    console.log("The navi Button clicked");
-    alert("The navi Button clicked" + sidenavi);
 
-}
-function toggltheme() {
-    alert("The arrow fungtion of click works");
-    console.log("The arrow fungtion of click works");
-}
 
 export default Navi

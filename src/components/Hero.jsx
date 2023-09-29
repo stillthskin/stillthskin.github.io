@@ -7,10 +7,10 @@ function Hero() {
     return (
         <>
             <div id="about">
-                <nav class="imgsect"><img src={prof} /></nav>
-                <div class="descsect">
+                <nav className="imgsect"><img src={prof} /></nav>
+                <div className="descsect">
                     <h2>Mr. Dennis Kenda</h2>
-                    <div class="introI"><span class="staticI">I'm: </span><ul class="dynaI">
+                    <div className="introI"><span className="staticI">I'm: </span><ul className="dynaI">
                         <li><span>Dev</span></li>
                         <li><span>Pentest</span></li>
                         <li><span>To Be Reviewed</span></li>
