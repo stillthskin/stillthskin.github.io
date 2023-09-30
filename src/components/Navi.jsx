@@ -24,7 +24,7 @@ function Navi() {
     return (
         <>
             <div className='navi'>
-                <a href='home'>Home</a>
+                <a href='home'><i className='fa fa-home'></i></a>
                 <ul>
                     <li><a href='#home'>Home</a></li>
                     <li><a href='#home'>Projects</a></li>
