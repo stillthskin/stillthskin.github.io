@@ -33,7 +33,7 @@
     }
 
     .sidenavi {
-        display: block;
+        display: none;
         height: 70vh;
         width: 50%;
         background-color: #123456;
