@@ -3,6 +3,7 @@ import React from 'react'
 function Contact() {
     return (
         <>
+            <h4>FAQs:</h4>
             <div className='contact'>
                 <form>
                     <input type='text' name='names' placeholder='Full Names...' />

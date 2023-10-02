@@ -7,7 +7,7 @@ function Projects() {
         <>
             <div id="projects">
                 <br />
-                <h3>Projects:</h3>
+                <h4>Projects:</h4>
 
                 <ul>
                     <li><a href=""><img src={subl} />Project I</a></li>

@@ -21,7 +21,7 @@ function Footer() {
                         </a></li>
                     </ul>
                 </div>
-                <p className="copywright"><b>@<span id="copydate">{full_year}</span></b> <b>Kenda</b>. All rights reserved.</p>
+                <p className="copywright"><b>©<span id="copydate">{full_year}</span></b> <b>Kenda</b>. All rights reserved.</p>
             </footer>
         </>
     )

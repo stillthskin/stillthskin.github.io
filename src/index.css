@@ -233,7 +233,7 @@ ul {
 }
 
 .contact form {
-    width: 60%;
+    width: 90%;
     height: auto;
     margin: auto;
 }
@@ -241,16 +241,27 @@ ul {
 .contact form input[type='text'],
 input[type='email'],
 textarea {
-    width: 95%;
+    width: 60%;
     margin: auto;
-    padding: 6px;
-    margin-top: 3px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: grey;
+    outline: none;
 }
 
 .contact form button {
-    left: 35%;
-    width: 20%;
+    padding: 6px;
+    font-weight: bold;
+    border: solid teal;
+    background: none;
+    border-radius: 15px;
+    margin-top: 11px;
+    left: 0;
 }
+
 
 .foot {
     display: block;
