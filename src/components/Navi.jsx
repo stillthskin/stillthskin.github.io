@@ -10,12 +10,12 @@ function Navi() {
     function showhidemenu() {
         //sidenavi = true;
         setsidenavi(!sidenavi);
-        alert("The navi Button clicked" + sidenavi);
+        //alert("The navi Button clicked" + sidenavi);
         console.log("The navi Button clicked");
     }
     function changeTheme() {
         settheme(!theme);
-        alert("The arrow fungtion of click works");
+        //alert("The arrow fungtion of click works");
         console.log("The arrow fungtion of click works");
     }
     return (
