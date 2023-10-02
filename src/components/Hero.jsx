@@ -1,9 +1,15 @@
 import React from 'react'
+import { useState } from 'react'
 import prof from '../assets/images/prof.jpg'
 import profls from '../assets/images/profLS.png'
 import '../index.css'
 
 function Hero() {
+    const [canread, togglecanread] = useState(false);
+    function showmore() {
+        console.log('something ' + canread);
+        togglecanread(!canread);
+    }
     return (
         <>
             <div id="about">
@@ -17,7 +23,7 @@ function Hero() {
                     </ul>
                     </div>
                     <br />
-                    <p id="my_intro">Hello! I'm a web developer with a passion for creating beautiful and functional websites. I have been working in the field for several years, honing my skills in a variety of programming languages, including HTML, CSS, JavaScript, and PHP.
+                    <p id="my_intro" className={`my_intro ${canread ? 'my_intro-active' : ''}`}>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I have been working in the field for several years, honing my skills in a variety of programming languages, including HTML, CSS, JavaScript, and PHP.
 
                         My approach to web development is focused on creating user-friendly and responsive websites that meet the unique needs of each client. I believe that good design should not only look great, but also be intuitive and easy to navigate.
 
@@ -29,7 +35,7 @@ function Hero() {
 
                         Thank you for taking the time to learn a little bit about me. I look forward to the opportunity to work with you and help bring your website vision to life!</p>
 
-                    <button id="read_more_btn">Read More</button>
+                    <button id="read_more_btn" onClick={showmore}>Read More</button>
                 </div>
             </div>
 

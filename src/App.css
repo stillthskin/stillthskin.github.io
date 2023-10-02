@@ -42,6 +42,10 @@
         overflow: hidden;
     }
 
+    .sidenavi-active {
+        display: block;
+    }
+
     .fa {
         font-size: 20px;
         color: antiquewhite;
@@ -77,9 +81,21 @@
         font-weight: bold;
     }
 
-    #my_intro {
+    .my_intro {
         font-family: 'Dancing Script', cursive;
         transition: all 1.5s;
+        display: none;
+    }
+
+    .my_intro-active {
+        display: block;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .hide {
         display: none;
     }
 

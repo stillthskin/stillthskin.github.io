@@ -68,10 +68,14 @@ a:active {
     color: antiquewhite
 }
 
-#my_intro {
+.my_intro {
     font-family: 'Dancing Script', cursive;
     transition: all 1.5s;
     display: none;
+}
+
+.my_intro-active {
+    display: block;
 }
 
 #read_more_btn {

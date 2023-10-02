@@ -4,9 +4,7 @@ import '../index.css'
 
 
 function Navi() {
-    //const sidenavigation = document.getElementById("sidenavi");
     const [sidenavi, setsidenavi] = useState(false);
-    //sidenavi ? sidenavigation.style.display("none") : sidenavigation.style.display("none")
 
     const [theme, settheme] = useState(true);
     function showhidemenu() {
@@ -14,7 +12,6 @@ function Navi() {
         setsidenavi(!sidenavi);
         alert("The navi Button clicked" + sidenavi);
         console.log("The navi Button clicked");
-
     }
     function changeTheme() {
         settheme(!theme);
@@ -34,18 +31,18 @@ function Navi() {
 
                 </ul>
                 <button id='' onClick={changeTheme}><i className={theme ? "fa fa-moon-o" : "fa fa-spinner fa-spin"}></i></button>
-                <button id='togglemenu' onClick={showhidemenu}><i className={sidenavi ? 'fa fa-bars ' : 'fa fa-bars'}></i></button>
+                <button id='togglemenu' onClick={showhidemenu}><i className={sidenavi ? 'fa fa-times' : 'fa fa-bars'}></i></button>
 
             </div >
             <br />
-            <div id='sidenavi' className={sidenavi ? 'sidenavi show' : 'sidenavi hide'}>
+            <div id='sidenavi' className={`sidenavi ${sidenavi ? 'sidenavi-active' : ''}`}>
                 <ul>
                     <li><a href='#home'>Home</a></li>
                     <li><a href='#home'>Projects</a></li>
                     <li><a href='#home'>Contact</a></li>
                     <li><a href='#home'>About</a></li>
                 </ul>
-            </div>
+            </div >
         </>
     )
 }
