@@ -141,8 +141,7 @@ h3 {
 }
 
 .dynaI {
-    margin-left: 15px;
-    line-height: 40px;
+    margin-left: 5px;
     height: 40px;
     background: transparent;
     overflow: hidden;
@@ -277,11 +276,12 @@ textarea {
 }
 
 .foot .social .fa {
-    color: #000;
+    color: #fff;
+    transition: all 1.5s;
 }
 
 .foot .social .fa:hover {
-    color: #fff;
+    color: #000;
 }
 
 .foot .social a:hover {
@@ -305,23 +305,30 @@ textarea {
 .foot .social ul li {
     display: inline-grid;
     overflow: hidden;
-    border: solid black 1px;
     transition: all 1.5s;
     border-radius: 11px;
     margin: 3px;
 
 }
 
-.foot .social ul li:nth-child(1):hover {
+.foot .social ul li:hover {
+    background-color: #fff;
+
+}
+
+.foot .social ul li:nth-child(1) {
     background-color: #0077B5;
+    color: #fff;
 }
 
-.foot .social ul li:nth-child(2):hover {
+.foot .social ul li:nth-child(2) {
     background-color: #333;
+    color: #fff;
 }
 
-.foot .social ul li:nth-child(3):hover {
+.foot .social ul li:nth-child(3) {
     background-color: #800000;
+    color: #fff;
 }
 
 @keyframes typing {

@@ -30,7 +30,7 @@ function Navi() {
 
 
                 </ul>
-                <button id='' onClick={changeTheme}><i className={theme ? "fa fa-moon-o" : "fa fa-spinner fa-spin"}></i></button>
+                <button id='' onClick={changeTheme}><i className={theme ? "fa fa-moon-o" : "fa fa-sun-o"}></i></button>
                 <button id='togglemenu' onClick={showhidemenu}><i className={sidenavi ? 'fa fa-times' : 'fa fa-bars'}></i></button>
 
             </div >

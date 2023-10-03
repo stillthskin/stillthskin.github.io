@@ -309,7 +309,6 @@
     .foot .social ul li {
         display: inline-grid;
         overflow: hidden;
-        border: solid black 1px;
         transition: all 1.5s;
         border-radius: 10px;
         width: 10%;
@@ -318,15 +317,20 @@
         justify-content: center;
     }
 
-    .foot .social ul li:nth-child(1):hover {
+    .foot .social ul li {
+        background-color: #fff;
+    }
+
+
+    .foot .social ul li:nth-child(1) {
         background-color: #0077B5;
     }
 
-    .foot .social ul li:nth-child(2):hover {
+    .foot .social ul li:nth-child(2) {
         background-color: #333;
     }
 
-    .foot .social ul li:nth-child(6):hover {
+    .foot .social ul li:nth-child(6) {
         background-color: teal;
     }
 }

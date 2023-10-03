@@ -16,7 +16,7 @@ function Footer() {
                     Find me on my social media:<br />
                     <ul>
                         <li><a href="https://www.linkedin.com"><i className="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.linkedin.com"><i className="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com"><i className="fa fa-github"></i></a></li>
                         <li><a href="https://www.linkedin.com"><i className="fa fa-codepen" aria-hidden="true"></i>
                         </a></li>
                     </ul>
