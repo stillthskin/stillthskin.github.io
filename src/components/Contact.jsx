@@ -11,7 +11,9 @@ function Contact() {
                     <textarea placeholder='Your Message...'></textarea> <br />
                     <button type='submit'>Send</button>
                 </form>
-
+                <label>Buy Me Coffee for no reason: </label>
+                <br />
+                <button id='tip'></button>
             </div>
         </>
     )
