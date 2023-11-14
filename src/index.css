@@ -1,9 +1,49 @@
+:root {
+    --color_primary_dark: black;
+    --color_primary_light: white;
+    --color_primary_contrast: teal;
+    --body_background: #123456;
+    --body_color: #ffffff;
+    --body_contrast: #008080;
+
+    /*background:var(--color_primary_dark);*/
+}
+
+[theme="light"] {
+    --body_background: #123456;
+    --body_color: #ffffff;
+    --body_contrast: #00FFFF;
+}
+
+[theme="dark"] {
+    --body_background: #ffffff;
+    --body_color: #000000;
+    --body_contrast: #008080;
+}
+
+
 * {
     padding: 0;
     margin: 0;
     animation: transIn;
     animation-duration: 1.5s;
 }
+
+#root {
+    background: var(--body_background);
+    color: var(--body_color);
+    overflow: hidden;
+    height: auto;
+}
+
+/*
+.body {
+    background: var(--body_background);
+    color: var(--body_color);
+    overflow: hidden;
+    height: auto;
+}
+*/
 
 .hide {
     display: none;
@@ -19,6 +59,7 @@
     justify-content: space-between;
     height: 60px;
     background: #123456;
+    color: antiquewhite;
     padding: 6px;
     align-items: center;
     margin: auto;
@@ -44,7 +85,7 @@
 
 .navi a:hover,
 a:active {
-    border-bottom: solid 3px #fff;
+    border-bottom: solid 3px var(--body_color);
 }
 
 .navi ul {
@@ -65,7 +106,7 @@ a:active {
 
 .fa {
     font-size: 18px;
-    color: antiquewhite
+    color: antiquewhite;
 }
 
 .my_intro {
@@ -81,7 +122,7 @@ a:active {
 #read_more_btn {
     padding: 6px;
     font-weight: bold;
-    border: solid teal;
+    border: solid var(--body_contrast);
     background: none;
     border-radius: 15px;
     margin-top: 30px;
@@ -94,6 +135,7 @@ a:active {
     padding: 30px;
     min-height: 70vh;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 #about .imgsect {
@@ -132,10 +174,10 @@ h2 {
 }
 
 h3 {
-    border-bottom: solid #000;
+    border-bottom: solid var(--body_background);
     width: 100%;
     bottom: 15px;
-    background-color: #000;
+    background-color: var(--body_background);
     color: #fff;
 
 }
@@ -154,10 +196,10 @@ h3 {
 
 .dynaI li span::after {
     content: "";
-    border-left: 2px solid teal;
+    border-left: 2px solid var(--body_contrast);
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: var(--body_background);
     left: 0;
     position: absolute;
     animation: typing 1.5s steps(15) infinite;
@@ -166,7 +208,7 @@ h3 {
 .dynaI li {
     font-size: 40px;
     font-weight: 600;
-    color: teal;
+    color: var(--body_contrast);
     top: 0px;
     position: relative;
     animation: slide 4.5s steps(3) infinite;
@@ -186,7 +228,7 @@ ul {
 
 /*##############################################################################################*/
 #projects {
-    background: #fff;
+    background: var(--body_background);
     justify-content: center;
     align-items: center;
 }
@@ -200,17 +242,17 @@ ul {
 
 #projects a {
     text-decoration: none;
-    color: #000;
+    color: var(--body_background);
     font-weight: bold;
     box-shadow: 6px 6px 6px 6px grey;
     display: block;
-    background: #fff;
+    background: var(--body_color);
     text-align: center;
     border-radius: 15px;
     width: 250px;
     list-style: none;
     text-decoration: none;
-    box-shadow: grey 20px;
+    box-shadow: var(--body_contrast) 20px;
     top: 15px;
 }
 
@@ -247,14 +289,14 @@ textarea {
     border-radius: 5px;
     border-right: none;
     border-bottom: none;
-    box-shadow: grey;
+    box-shadow: var(--body_contrast);
     outline: none;
 }
 
 .contact form button {
     padding: 6px;
     font-weight: bold;
-    border: solid teal;
+    border: solid var(--body_contrast);
     background: none;
     border-radius: 15px;
     margin-top: 11px;
@@ -284,17 +326,17 @@ textarea {
     border-radius: 50%;
     line-height: 1.2em;
     text-decoration: none;
-    color: #000;
+    color: var(--body_background);
 
 }
 
 .foot .social .fa {
-    color: #fff;
+    color: var(--body_color);
     transition: all 1.5s;
 }
 
 .foot .social .fa:hover {
-    color: #000;
+    color: var(--body_background);
 }
 
 .foot .social a:hover {
@@ -302,7 +344,7 @@ textarea {
     border-radius: 50%;
     line-height: 1.2em;
     text-decoration: none;
-    color: #fff;
+    color: var(--body_color);
 
 }
 
@@ -325,7 +367,7 @@ textarea {
 }
 
 .foot .social ul li:hover {
-    background-color: #fff;
+    background-color: var(--body_color);
 
 }
 

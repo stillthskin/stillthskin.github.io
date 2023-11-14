@@ -1,15 +1,55 @@
 @media only screen and (max-width: 810px) {
+
+    :root {
+        --color_primary_dark: black;
+        --color_primary_light: white;
+        --color_primary_contrast: teal;
+        /*background:var(--color_primary_dark);*/
+    }
+
+    [theme="light"] {
+        --body_background: #123456;
+        --body_color: #ffffff;
+        --body_contrast: #00FFFF;
+    }
+
+    [theme="dark"] {
+        --body_background: #ffffff;
+        --body_color: #000000;
+        --body_contrast: #008080;
+    }
+
+
     * {
         padding: 0;
         margin: 0;
+        animation: transIn;
+        animation-duration: 1.5s;
     }
+
+    #root {
+        background: var(--body_background);
+        color: var(--body_color);
+        overflow: hidden;
+        height: auto;
+    }
+
+    /*
+    .body {
+        background: var(--body_background);
+        color: var(--body_color);
+        overflow: hidden;
+        height: auto;
+    }
+*/
 
     .navi {
         display: flex;
         width: 98%;
         justify-content: space-between;
-        height: 40px;
+        max-height: 40px;
         background: #123456;
+        color: antiquewhite;
         padding: 3px;
         align-items: center;
         margin: auto;
@@ -17,7 +57,7 @@
 
     .navi a {
         text-decoration: none;
-        color: antiquewhite;
+        color: var(--body_color);
         font-weight: bold;
         font-size: large;
         padding: 9px;
@@ -36,7 +76,7 @@
         display: none;
         height: 70vh;
         width: 50%;
-        background-color: #123456;
+        background-color: var(--body_background);
         position: absolute;
         z-index: 2;
         overflow: hidden;
@@ -48,7 +88,7 @@
 
     .fa {
         font-size: 20px;
-        color: antiquewhite;
+        color: var(--body_color);
     }
 
     .sidenavi ul {
@@ -72,10 +112,10 @@
     .sidenavi a {
         display: block;
         text-decoration: none;
-        color: antiquewhite;
+        color: var(--body_color);
         width: 100%;
         height: auto;
-        border-bottom: solid antiquewhite;
+        border-bottom: solid var(--body_color);
         padding: 5px;
         text-transform: uppercase;
         font-weight: bold;
@@ -102,7 +142,7 @@
     #read_more_btn {
         padding: 6px;
         font-weight: bold;
-        border: solid teal;
+        border: solid var(--body_contrast);
         background: none;
         border-radius: 15px;
         margin-top: 30px;
@@ -116,7 +156,7 @@
         height: auto;
         position: relative;
         z-index: 1;
-        background: #fff;
+        background: var(--body_color);
     }
 
     #about .imgsect {
@@ -159,11 +199,11 @@
     }
 
     h3 {
-        border-bottom: solid #000;
+        border-bottom: solid var(--body_background);
         width: 100%;
         bottom: 15px;
-        background-color: #000;
-        color: #fff;
+        background-color: var(--body_background);
+        color: var(--body_color);
 
     }
 
@@ -184,10 +224,10 @@
 
     .dynaI li span::after {
         content: "";
-        border-left: 2px solid teal;
+        border-left: 2px solid var(--body_contrast);
         width: 100%;
         height: 100%;
-        background: #fff;
+        background: var(--body_color);
         left: 0;
         position: absolute;
         animation: typing 1.5s steps(15) infinite;
@@ -196,14 +236,14 @@
     .dynaI li {
         font-size: 30px;
         font-weight: 600;
-        color: teal;
+        color: var(--body_contrast);
         top: 0px;
         position: relative;
         animation: slide 4.5s steps(3) infinite;
     }
 
     #projects {
-        background: #fff;
+        background: var(--body_background);
         align-items: center;
         justify-content: center;
     }
@@ -225,17 +265,17 @@
 
     #projects a {
         text-decoration: none;
-        color: #000;
+        color: antiquewhite;
         font-weight: bold;
-        box-shadow: 6px 6px 6px 6px grey;
+        box-shadow: 6px 6px 6px 6px var(--body_contrast);
         display: block;
-        background: #fff;
+        background: var(--body_color);
         text-align: center;
         border-radius: 15px;
         width: 300px;
         list-style: none;
         text-decoration: none;
-        box-shadow: grey 20px;
+        box-shadow: var(--body_contrast) 20px;
         top: 15px;
     }
 
@@ -261,13 +301,13 @@
         border-radius: 5px;
         border-right: none;
         border-bottom: none;
-        box-shadow: grey;
+        box-shadow: var(--body_color);
     }
 
     .contact form button {
         padding: 6px;
         font-weight: bold;
-        border: solid teal;
+        border: solid var(--body_contrast);
         background: none;
         border-radius: 15px;
         margin-top: 11px;
@@ -284,7 +324,7 @@
         border-radius: 50%;
         line-height: 1.2em;
         text-decoration: none;
-        color: #000;
+        color: var(--body_background);
 
     }
 
@@ -293,7 +333,7 @@
         border-radius: 50%;
         line-height: 1.2em;
         text-decoration: none;
-        color: #fff;
+        color: var(--body_color);
 
     }
 
@@ -312,7 +352,7 @@
         transition: all 1.5s;
         border-radius: 10px;
         width: 10%;
-        color: #000;
+        color: var(--body_background);
         align-items: center;
         justify-content: center;
     }

@@ -14,8 +14,9 @@ function Navi() {
         console.log("The navi Button clicked");
     }
     function changeTheme() {
-        settheme(!theme);
+        theme ? document.querySelector("body").setAttribute('theme', 'light') : document.querySelector("body").setAttribute('theme', 'dark');
         //alert("The arrow fungtion of click works");
+        settheme(!theme);
         console.log("The arrow fungtion of click works");
     }
     return (

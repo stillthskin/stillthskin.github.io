@@ -5,6 +5,7 @@ import profls from '../assets/images/profLS.png'
 import '../index.css'
 
 function Hero() {
+    const readmorebtn = document.getElementById("read_more_btn");
     const [canread, togglecanread] = useState(false);
     function showmore() {
         console.log('something ' + canread);

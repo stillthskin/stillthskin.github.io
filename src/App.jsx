@@ -5,9 +5,6 @@ import './App.css'
 
 
 function App() {
-  const dark = "";
-  const [theme, settheme] = useState(dark)
-
   return (
     <>
       {<Navi />}
