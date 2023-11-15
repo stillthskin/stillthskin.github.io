@@ -124,7 +124,8 @@ a:active {
     font-weight: bold;
     border: solid var(--body_contrast);
     background: none;
-    border-radius: 15px;
+    background-color: var(--body_color);
+    color: var(--body_background);
     margin-top: 30px;
     left: 0;
 }
@@ -281,6 +282,7 @@ ul {
 
 .contact form input[type='text'],
 input[type='email'],
+input[type='number'],
 textarea {
     width: 60%;
     margin: auto;
@@ -298,7 +300,8 @@ textarea {
     font-weight: bold;
     border: solid var(--body_contrast);
     background: none;
-    border-radius: 15px;
+    background-color: var(--body_color);
+    color: var(--body_background);
     margin-top: 11px;
     left: 0;
 }
@@ -314,6 +317,10 @@ textarea {
     width: 75px;
     height: 75px;
 
+}
+
+#tipform {
+    display: none;
 }
 
 

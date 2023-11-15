@@ -293,6 +293,7 @@
 
     .contact form input[type='text'],
     input[type='email'],
+    input[type='number'],
     textarea {
         width: 99%;
         margin: auto;
@@ -308,6 +309,7 @@
         padding: 6px;
         font-weight: bold;
         border: solid var(--body_contrast);
+        color: var(--body_color);
         background: none;
         border-radius: 15px;
         margin-top: 11px;
