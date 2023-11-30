@@ -24,7 +24,7 @@
         padding: 0;
         margin: 0;
         animation: transIn;
-        animation-duration: 1.5s;
+        animation-duration: 2.5s;
     }
 
     #root {
@@ -57,7 +57,7 @@
 
     .navi a {
         text-decoration: none;
-        color: var(--body_color);
+        color: antiquewhite;
         font-weight: bold;
         font-size: large;
         padding: 9px;
@@ -73,6 +73,7 @@
     }
 
     .sidenavi {
+        border-top: 20px solid var(--body_color);
         display: none;
         height: 70vh;
         width: 50%;
@@ -115,7 +116,31 @@
         color: var(--body_color);
         width: 100%;
         height: auto;
-        border-bottom: solid var(--body_color);
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: all 1.5s;
+    }
+
+    .sidenavi .fa {
+        font-size: 20px;
+        padding: 5px;
+        right: 10px;
+        transition: all 1.5s;
+    }
+
+    .sidenavi a:hover .fa {
+        color: var(--body_background);
+
+    }
+
+    .sidenavi a:hover {
+        display: block;
+        text-decoration: none;
+        color: var(--body_background);
+        background-color: var(--body_color);
+        width: 100%;
+        height: auto;
         padding: 5px;
         text-transform: uppercase;
         font-weight: bold;
@@ -144,6 +169,7 @@
         font-weight: bold;
         border: solid var(--body_contrast);
         background: none;
+        border-radius: 11px;
         background-color: var(--body_color);
         color: var(--body_background);
         margin-top: 30px;
@@ -210,7 +236,7 @@
     }
 
     .dynaI {
-        margin-left: 15px;
+        margin-left: 5px;
         line-height: 40px;
         height: 40px;
         background: transparent;
@@ -267,14 +293,14 @@
 
     #projects a {
         text-decoration: none;
-        color: antiquewhite;
+        color: var(--body_background);
         font-weight: bold;
         box-shadow: 6px 6px 6px 6px var(--body_contrast);
         display: block;
         background: var(--body_color);
         text-align: center;
         border-radius: 15px;
-        width: 300px;
+        width: 60%;
         list-style: none;
         text-decoration: none;
         box-shadow: var(--body_contrast) 20px;
@@ -311,7 +337,7 @@
         padding: 6px;
         font-weight: bold;
         border: solid var(--body_contrast);
-        background-color: var(--body_color);
+        background: var(--body_color);
         color: var(--body_background);
         background: none;
         margin-top: 11px;
@@ -319,7 +345,7 @@
         width: 20%;
     }
 
-    .foot {
+    b .foot {
         display: block;
     }
 
@@ -348,6 +374,19 @@
 
     .foot .social ul {
         margin-left: 30%;
+    }
+
+    @keyframes typing {
+        100% {
+            left: 100%;
+            margin: 0px -15px 0px 15px;
+        }
+    }
+
+    @keyframes slide {
+        100% {
+            top: -135px;
+        }
     }
 
     .foot .social ul li {

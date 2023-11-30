@@ -24,12 +24,10 @@ function Navi() {
             <div className='navi'>
                 <a href='home'><i className='fa fa-home'></i></a>
                 <ul>
-                    <li><a href='#home'>Home</a></li>
-                    <li><a href='#home'>Projects</a></li>
-                    <li><a href='#home'>Contact</a></li>
-                    <li><a href='#home'>About</a></li>
-
-
+                    <li><a href='#home'><i className='fa fa-home'></i> Home</a></li>
+                    <li><a href='#home'><i className="fa fa-github"></i> Projects</a></li>
+                    <li><a href='#home'><i className='fa fa-envelope'></i> Contact</a></li>
+                    <li><a href='#home'><i className='fa fa-info'></i> About</a></li>
                 </ul>
                 <button id='' onClick={changeTheme}><i className={theme ? "fa fa-moon-o" : "fa fa-sun-o"}></i></button>
                 <button id='togglemenu' onClick={showhidemenu}><i className={sidenavi ? 'fa fa-times' : 'fa fa-bars'}></i></button>
@@ -38,10 +36,10 @@ function Navi() {
             <br />
             <div id='sidenavi' className={`sidenavi ${sidenavi ? 'sidenavi-active' : ''}`}>
                 <ul>
-                    <li><a href='#home'>Home</a></li>
-                    <li><a href='#home'>Projects</a></li>
-                    <li><a href='#home'>Contact</a></li>
-                    <li><a href='#home'>About</a></li>
+                    <li><a href='#home'><i className='fa fa-home'></i> Home</a></li>
+                    <li><a href='#home'><i className="fa fa-github"></i> Projects</a></li>
+                    <li><a href='#home'><i className='fa fa-envelope'></i> Contact</a></li>
+                    <li><a href='#home'><i className='fa fa-info'></i> About</a></li>
                 </ul>
             </div >
         </>

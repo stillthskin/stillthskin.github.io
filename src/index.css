@@ -124,6 +124,7 @@ a:active {
     font-weight: bold;
     border: solid var(--body_contrast);
     background: none;
+    border-radius: 11px;
     background-color: var(--body_color);
     color: var(--body_background);
     margin-top: 30px;
@@ -142,15 +143,15 @@ a:active {
 }
 
 #about .imgsect {
-    width: 30%;
+    width: 40%;
     float: right;
     height: 100%;
-    align-items: end;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
 }
 
 #about .descsect {
-    width: 70%;
+    width: 59%;
     float: left;
     height: 100%;
     display: block;
@@ -187,7 +188,7 @@ h3 {
 
 .dynaI {
     margin-left: 5px;
-    height: 40px;
+    height: 50px;
     background: transparent;
     overflow: hidden;
 }
@@ -198,6 +199,7 @@ h3 {
 }
 
 .dynaI li span::after {
+    margin-top: 10px;
     content: "";
     border-left: 2px solid var(--body_contrast);
     width: 100%;
@@ -224,9 +226,10 @@ ul {
 }
 
 #about img {
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 550px;
     left: 0;
+    border-radius: 10%;
 }
 
 /*##############################################################################################*/
@@ -266,6 +269,7 @@ ul {
 
 #projects a img {
     width: 100%;
+    border-radius: 15px 15px 0 0;
 
 }
 
@@ -304,6 +308,7 @@ textarea {
     background: none;
     background-color: var(--body_color);
     color: var(--body_background);
+    border-radius: 11px;
     margin-top: 11px;
     left: 0;
 }
@@ -399,6 +404,12 @@ textarea {
     100% {
         left: 100%;
         margin: 0px -15px 0px 15px;
+    }
+}
+
+@keyframes slide {
+    100% {
+        top: -180px;
     }
 }
 
