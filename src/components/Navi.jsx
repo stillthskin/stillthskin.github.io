@@ -6,7 +6,7 @@ import '../index.css'
 function Navi() {
     const [sidenavi, setsidenavi] = useState(false);
 
-    const [theme, settheme] = useState(true);
+    const [theme, settheme] = useState(false);
     function showhidemenu() {
         //sidenavi = true;
         setsidenavi(!sidenavi);

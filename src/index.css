@@ -70,6 +70,26 @@
     border: none;
 }
 
+.navi .fa {
+    font-size: 20px;
+    padding: 5px;
+    transition: all 1.5s;
+}
+
+.navi a:hover .fa {
+    color: var(--body_background);
+
+}
+
+.navi a:hover {
+    text-decoration: none;
+    color: var(--body_background);
+    background-color: var(--body_color);
+    width: 100%;
+    height: auto;
+}
+
+
 .sidenavi {
     display: none;
 }
@@ -110,12 +130,12 @@ a:active {
 }
 
 .my_intro {
-    font-family: 'Dancing Script', cursive;
-    transition: all 1.5s;
+    transition: all 3s;
     display: none;
 }
 
 .my_intro-active {
+    transition: all 3s;
     display: block;
 }
 
@@ -409,7 +429,7 @@ textarea {
 
 @keyframes slide {
     100% {
-        top: -180px;
+        top: -185px;
     }
 }
 

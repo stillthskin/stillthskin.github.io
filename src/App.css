@@ -24,6 +24,7 @@
         padding: 0;
         margin: 0;
         animation: transIn;
+        transition: all 1.5s;
         animation-duration: 2.5s;
     }
 
@@ -147,12 +148,12 @@
     }
 
     .my_intro {
-        font-family: 'Dancing Script', cursive;
-        transition: all 1.5s;
+        transition: all 3s;
         display: none;
     }
 
     .my_intro-active {
+        transition: all 3s;
         display: block;
     }
 

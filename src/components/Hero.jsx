@@ -24,17 +24,13 @@ function Hero() {
                     </ul>
                     </div>
                     <br />
-                    <p id="my_intro" className={`my_intro ${canread ? 'my_intro-active' : ''}`}>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I have been working in the field for several years, honing my skills in a variety of programming languages, including HTML, CSS, JavaScript, and PHP.
+                    <p id="my_intro" className={`my_intro ${canread ? 'my_intro-active' : ''}`}><b>Professional Summary:</b><br />
 
-                        My approach to web development is focused on creating user-friendly and responsive websites that meet the unique needs of each client. I believe that good design should not only look great, but also be intuitive and easy to navigate.
+                        Dedicated and detail-oriented Computer Science graduate with a Bachelor’s Degree, specializing in web development. Proficient in HTML DOM, CSS, and JavaScript, including CSS preprocessors like Sass and Less. Demonstrated hands-on experience with JavaScript libraries such as jQuery and React. My primary stack revolves around Python and the Django framework, where I leverage the power of this dynamic duo to create robust and scalable web applications.
 
-                        Over the years, I have had the pleasure of working with a diverse range of clients, from small businesses to large corporations. Each project has presented its own set of challenges, and I am always excited to tackle new and exciting projects.
+                        Adept in handling REST, Open API, and SOAP, with collaborative experience in UI/UX design tools. Comprehensive understanding of XML and JSON data formats, utilizing Git for streamlined development processes. Familiarity with content management systems like WordPress and adept at browser testing and debugging tools.
 
-                        In addition to my technical skills, I am also a strong communicator and collaborator. I believe that effective communication is key to any successful project, and I am committed to keeping my clients informed and involved every step of the way.
-
-                        When I'm not coding, you can usually find me exploring new hiking trails or trying out new recipes in the kitchen. I believe that a healthy work-life balance is essential to staying motivated and focused in my work.
-
-                        Thank you for taking the time to learn a little bit about me. I look forward to the opportunity to work with you and help bring your website vision to life!</p>
+                        Bringing a holistic perspective to the web development process, merging technical proficiency with a keen eye for design principles. Well-versed in SEO, dedicated to delivering high-quality results in fast-paced Agile environments. Strong analytical and multitasking skills, coupled with a growth mindset for continuous learning and adaptation to emerging technologies. Effective communication skills enable seamless collaboration with cross-functional teams, ensuring project success.</p>
 
                     <button id="read_more_btn" onClick={showmore}>Read More</button>
                 </div>
