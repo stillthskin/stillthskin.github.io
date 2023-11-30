@@ -334,18 +334,31 @@
     }
 
     .contact form button {
+        padding: 11px;
+        font-weight: bold;
+        border: solid var(--body_contrast);
+        background: none;
+        background-color: var(--body_color);
+        color: var(--body_background);
+        border-radius: 11px;
+        margin-top: 11px;
+        left: 0;
+    }
+
+    /*
+    .contact form button {
         padding: 6px;
         font-weight: bold;
         border: solid var(--body_contrast);
-        background: var(--body_color);
+        background-color: var(--body_color);
         color: var(--body_background);
         background: none;
         margin-top: 11px;
         left: 0;
         width: 20%;
-    }
+    }*/
 
-    b .foot {
+    .foot {
         display: block;
     }
 
