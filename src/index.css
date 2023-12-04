@@ -26,6 +26,7 @@
     padding: 0;
     margin: 0;
     animation: transIn;
+    transition: all 1.5s;
     animation-duration: 1.5s;
 }
 
