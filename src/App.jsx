@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Navi, Hero, Projects, Contact, Footer } from './components/imports.js'
+import { Navi, Hero, Projects, Contact, Footer,Timeline} from './components/imports.js'
 import './App.css'
 
 
@@ -9,6 +9,7 @@ function App() {
     <>
       {<Navi />}
       {<Hero />}
+      {<Timeline/>}
       {<Projects />}
       {<Contact />}
       {<Footer />}

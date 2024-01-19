@@ -156,7 +156,7 @@ a:active {
     margin-top: 100px;
     width: 100%;
     padding: 30px;
-    min-height: 70vh;
+    min-height: 50vh;
     background-color: var(--body_background);
     color: var(--body_color);
     box-sizing: border-box;
@@ -219,25 +219,28 @@ h3 {
     margin-top: 10px;
 }
 
-.dynaI li span::after {
+.dynaI::before {
     margin-top: 10px;
     content: "";
-    border-left: 2px solid var(--body_contrast);
+    border-left: 1px solid var(--body_contrast);
     width: 100%;
     height: 100%;
-    background: var(--body_background);
-    left: 0;
+    background:none;
     position: absolute;
-    animation: typing 1.5s steps(15) infinite;
+    animation: typing 3s steps(15) infinite;
 }
+.Iname{
+    font-size: 40px;
+    font-weight: bold;
 
-.dynaI li {
+}
+.dynaI{
     font-size: 40px;
     font-weight: 600;
     color: var(--body_contrast);
     top: 0px;
     position: relative;
-    animation: slide 4.5s steps(3) infinite;
+    /*animation: slide 4.5s steps(3) infinite;*/
 }
 
 ul {
@@ -251,6 +254,55 @@ ul {
     height: 550px;
     left: 0;
     border-radius: 10%;
+}
+
+/**********************************************************************************/
+.timeline {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    overflow: scroll;
+    color: #000000;
+
+}
+.container{
+    display: grid;
+    width:100%;
+    grid-template-columns: 1fr 3px 1fr;
+}
+.component{
+    margin: 0 20px 20px 20px;
+}
+
+.component_middle{
+    position: relative;
+    background-color: #000;
+}
+.date_right{
+    text-align: right;
+   
+
+}
+.date_left{
+    text-align: left;
+}
+.timeline_dot{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:0;
+    width: 15px;
+    height: 15px;
+    background-color: #800000;
+    border-radius: 50%;
+}
+.timeline_dot--bottom{
+    top:initial;
+    bottom: 0;
+}
+.achivement{
+    border:solid 1px;
+    padding:0 15px 15px 15px;
 }
 
 /*##############################################################################################*/
@@ -422,9 +474,11 @@ textarea {
 }
 
 @keyframes typing {
-    100% {
+    40%,60%{
         left: 100%;
-        margin: 0px -15px 0px 15px;
+    }
+    100% {
+        left: 0;
     }
 }
 

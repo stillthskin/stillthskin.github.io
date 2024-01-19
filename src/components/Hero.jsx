@@ -5,6 +5,22 @@ import profls from '../assets/images/profLS.png'
 import '../index.css'
 
 function Hero() {
+    const text = document.querySelector('.dynaI');
+    const settext = () =>{
+        setTimeout(()=>{
+            text.textContent = "QA-Egineer";
+
+        },0);
+        setTimeout(()=>{
+            text.textContent = "dev";
+
+        },3000);
+        setTimeout(()=>{
+            text.textContent = "Pentester";
+
+        },6000);
+    }
+   settext();
     const readmorebtn = document.getElementById("read_more_btn");
     const [canread, togglecanread] = useState(false);
     function showmore() {
@@ -16,12 +32,10 @@ function Hero() {
             <div id="about">
                 <nav className="imgsect"><img src={prof} /></nav>
                 <div className="descsect">
-                    <h2>Mr. Dennis Kenda</h2>
-                    <div className="introI"><span className="staticI">I'm a: </span><ul className="dynaI">
-                        <li><span>Dev</span></li>
-                        <li><span>Pentest</span></li>
-                        <li><span>To Be Reviewed</span></li>
-                    </ul>
+                    <span className="Iname">Mr. Dennis Kenda</span><br/>
+                    <div className="introI"><span className="staticI">I'm a: </span><span className="dynaI">
+                        Dev</span>
+        
                     </div>
                     <br />
                     <p id="my_intro" className={`my_intro ${canread ? 'my_intro-active' : ''}`}><b>Professional Summary:</b><br />
@@ -40,6 +54,7 @@ function Hero() {
 
 
     )
+    
 }
 
 export default Hero
