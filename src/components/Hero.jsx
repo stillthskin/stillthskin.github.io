@@ -5,7 +5,7 @@ import profls from '../assets/images/profLS.png'
 import '../index.css'
 
 function Hero() {
-    const text = document.querySelector('.dynaI');
+    const text = document.getElementsByClassName('dynaI');
     const settext = () =>{
         setTimeout(()=>{
             text.textContent = "QA-Egineer";
@@ -33,8 +33,7 @@ function Hero() {
                 <nav className="imgsect"><img src={prof} /></nav>
                 <div className="descsect">
                     <span className="Iname">Mr. Dennis Kenda</span><br/>
-                    <div className="introI"><span className="staticI">I'm a: </span><span className="dynaI">
-                        Dev</span>
+                    <div className="introI"><span className="staticI">I'm a: </span><span className="dynaI">Dev</span>
         
                     </div>
                     <br />

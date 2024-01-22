@@ -251,15 +251,15 @@
         margin-top: 10px;
     }
 
-    .dynaI li span::after {
+    .dynaI::before {
+        margin-top: 10px;
         content: "";
-        border-left: 2px solid var(--body_contrast);
+        border-left: 1px solid var(--body_contrast);
         width: 100%;
         height: 100%;
-        background: var(--body_background);
-        left: 0;
+        background:var(--body_background);
         position: absolute;
-        animation: typing 1.5s steps(15) infinite;
+        animation: typing 3s steps(15) infinite;
     }
 
     .dynaI li {
@@ -391,9 +391,11 @@
     }
 
     @keyframes typing {
-        100% {
+        40%,60%{
             left: 100%;
-            margin: 0px -15px 0px 15px;
+        }
+        100% {
+            left: 0;
         }
     }
 
