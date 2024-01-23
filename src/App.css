@@ -282,10 +282,12 @@
         margin: auto;
         margin-top: 21px;
 
+
     }
 
     #projects li {
-        display: inline-grid;
+        width: 100%;
+        display: grid;
         row-gap: 10px;
         margin: 10px;
 
@@ -301,11 +303,12 @@
         background: var(--body_color);
         text-align: center;
         border-radius: 15px;
-        width: 60%;
+        width: 70%;
         list-style: none;
         text-decoration: none;
         box-shadow: var(--body_contrast) 20px;
         top: 15px;
+        margin: auto;
     }
 
     .contact {
