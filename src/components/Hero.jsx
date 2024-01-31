@@ -47,6 +47,7 @@ function Hero() {
 
                     <button id="read_more_btn" onClick={showmore}>Read More</button>
                 </div>
+                <br/>
             </div>
 
         </>

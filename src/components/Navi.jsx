@@ -25,9 +25,9 @@ function Navi() {
                 <a href='home'><i className='fa fa-home'></i></a>
                 <ul>
                     <li><a href='#home'><i className='fa fa-home'></i> Home</a></li>
-                    <li><a href='#home'><i className="fa fa-github"></i> Projects</a></li>
-                    <li><a href='#home'><i className='fa fa-envelope'></i> Contact</a></li>
-                    <li><a href='#home'><i className='fa fa-info'></i> About</a></li>
+                    <li><a href='#projects'><i className="fa fa-github"></i> Projects</a></li>
+                    <li><a href='#contact'><i className='fa fa-envelope'></i> Contact</a></li>
+                    <li><a href='#about'><i className='fa fa-info'></i> About</a></li>
                 </ul>
                 <button id='' onClick={changeTheme}><i className={theme ? "fa fa-moon-o" : "fa fa-sun-o"}></i></button>
                 <button id='togglemenu' onClick={showhidemenu}><i className={sidenavi ? 'fa fa-times' : 'fa fa-bars'}></i></button>
