@@ -26,6 +26,7 @@
         animation: transIn;
         transition: all 1.5s;
         animation-duration: 2.5s;
+        scroll-behavior: smooth;
     }
 
     #root {
