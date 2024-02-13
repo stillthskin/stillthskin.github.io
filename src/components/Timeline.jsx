@@ -31,7 +31,7 @@ function Timeline() {
                         </div>
                     </div>
                     <div className="component">
-                        <div className="timeline_date achivement"><h4><b>Kenya Institute of Public Policy Research & Analysis(KIPPRA)</b></h4>
+                        <div className="timeline_date achivement"><h4><b><u>Kenya Institute of Public Policy Research & Analysis(KIPPRA)</u></b></h4>
                             <ul>
                                 <li>• Reviewed diagnostics and assessed the functionality and efficiency of systems.</li>
                                 <li>• Implemented security measures and monitored security certificates.</li>
@@ -57,12 +57,12 @@ function Timeline() {
                         <div className="timeline_dot timeline_dot--bottom"></div>
                     </div>
                     <div className="component">
-                        <div className="timeline_date achivement"><h4><b>National Treasury(PFMR)</b></h4>
+                        <div className="timeline_date achivement"><h4><b><u>National Treasury(PFMR)</u></b></h4>
                             <ul>
-                                <li>Support the IT team in maintaining hardware, software, and other systems.</li>
-                                <li>Assist with troubleshooting issues and provide technical support.</li>
-                                <li>Organize and maintain IT resources.</li>
-                                <li>Lend IT support in areas such as cybersecurity, programming, analytics, and data
+                                <li>• Support the IT team in maintaining hardware, software, and other systems.</li>
+                                <li>• Assist with troubleshooting issues and provide technical support.</li>
+                                <li>• Organize and maintain IT resources.</li>
+                                <li>• Lend IT support in areas such as cybersecurity, programming, analytics, and data
                                     center management.</li>
                             </ul>
                         </div>

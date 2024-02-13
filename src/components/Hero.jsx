@@ -1,26 +1,27 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,useRef } from 'react'
 import prof from '../assets/images/prof.jpg'
 import profls from '../assets/images/profLS.png'
 import '../index.css'
 
 function Hero() {
-    const text = document.getElementsByClassName('dynaI');
+    const dynaIRef = useRef(null);
     const settext = () =>{
         setTimeout(()=>{
-            text.textContent = "QA-Egineer";
+            dynaIRef.current.innerText = "Dev";
 
         },0);
         setTimeout(()=>{
-            text.textContent = "dev";
+            dynaIRef.current.innerText = "QA-Engineer";
 
-        },3000);
+        },4000);
         setTimeout(()=>{
-            text.textContent = "Pentester";
+            dynaIRef.current.innerText = "Pentester";
 
-        },6000);
+        },8000);
     }
    settext();
+   setInterval(settext,12000);
     const readmorebtn = document.getElementById("read_more_btn");
     const [canread, togglecanread] = useState(false);
     function showmore() {
@@ -33,7 +34,7 @@ function Hero() {
                 <nav className="imgsect"><img src={prof} /></nav>
                 <div className="descsect">
                     <span className="Iname">Mr. Dennis Kenda</span><br/>
-                    <div className="introI"><span className="staticI">I'm a: </span><span className="dynaI">Dev</span>
+                    <div className="introI"><span className="staticI">I'm a: </span><span className="dynaI" ref={dynaIRef}></span>
         
                     </div>
                     <br />
