@@ -236,9 +236,10 @@
         color: var(--body_color);
 
     }
-
+    .Iname{
+        font-size: 35px;
+    }
     .dynaI {
-        margin-left: 5px;
         line-height: 40px;
         height: 40px;
         background: transparent;
@@ -253,7 +254,6 @@
     }
 
     .dynaI::before {
-        margin-top: 10px;
         content: "";
         border-left: 1px solid var(--body_contrast);
         width: 100%;
