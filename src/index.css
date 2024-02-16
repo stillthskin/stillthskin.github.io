@@ -71,6 +71,18 @@
     background: none;
     border: none;
 }
+.herocont{
+    place-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #cab6b6;
+    color: rgba(35, 163, 157, 0.87);
+}
+.heropepo{
+ width: 40%;
+ margin: auto;
+}
 
 .navi .fa {
     font-size: 20px;

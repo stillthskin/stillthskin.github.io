@@ -24,6 +24,7 @@ function Hero() {
    setInterval(settext,12000);
     const readmorebtn = document.getElementById("read_more_btn");
     const [canread, togglecanread] = useState(false);
+    //canread? readmorebtn.innerHTML = "Read More":readmorebtn.innerHTML = "Read More";
     function showmore() {
         console.log('something ' + canread);
         togglecanread(!canread);
@@ -46,7 +47,7 @@ function Hero() {
 
                         Bringing a holistic perspective to the web development process, merging technical proficiency with a keen eye for design principles. Well-versed in SEO, dedicated to delivering high-quality results in fast-paced Agile environments. Strong analytical and multitasking skills, coupled with a growth mindset for continuous learning and adaptation to emerging technologies. Effective communication skills enable seamless collaboration with cross-functional teams, ensuring project success.</p>
 
-                    <button id="read_more_btn" onClick={showmore}>Read More</button>
+                    <button id="read_more_btn" onClick={showmore}>|More About|</button>
                 </div>
                 <br/>
             </div>
