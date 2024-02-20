@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import React from 'react'
 import '../index.css'
 import subl from '../assets/images/subl.jpg'
@@ -10,9 +11,9 @@ function Projects() {
                 <h4>Projects:</h4>
 
                 <ul>
-                    <li><a href=""><img src={subl} />Project I</a></li>
-                    <li><a href="#"><img src={subl} />Project II</a></li>
-                    <li><a href="#"><img src={subl} />Project III</a></li>
+                    <li><Link i to="https://github.com/stillthskin/Andapp"><img src={subl}/> </Link>Android App</li>
+                    <li><Link i to="https://github.com/stillthskin/blockchain"><img src={subl}/> </Link>Blockchain Project</li>
+                    <li><Link i to="https://github.com/stillthskin/Robotdodge"><img src={subl}/> </Link>Robot Dodge Game</li>
                 </ul>
             </div>
         </>
